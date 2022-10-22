@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <title>$alaryComp</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Esteban">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster"
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <div></div>
+            <a href="index.html">
+                <div class="logo">$alaryComp</div>
+            </a>
+            <a href="about.html">
+                <button class="aboutbtn">About</button>
+            </a>
+        </div>
+        <div class="title">Compare Salaries by Cost of Living</div>
+        <div class="job1">Job #1</div>
+        <div class="job2">Job #2</div>
+        <div class="city1">
+            <legend>City</legend>
+            <select type="text" name="city1" id="city1" data-dropdown>
+                <option value="abilene">Abilene, TX</option>
+                <option value="adrian">Adrian, MI</option>
+                <option value="akron">Akron, OH</option>
+                <option value="alamogordo">Alamogordo, NM</option>
+                <option value="albany">Albany, GA</option>
+                <option value="albertville">Albertville, AL</option>
+            </select>
+        </div>
+        <div class="salary1">
+            <legend>Salary</legend>
+            <label for="salary1">$</label>
+            <input type="number" type="button" placeholder="0" id="salary1">
+        </div>
+        <div class="city2">
+            <legend>City</legend>
+            <select name="city2" id="city2">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="salary2">
+            <legend>Salary</legend>
+            <label for="salary2">$</label>
+            <input type="number" placeholder="0" id="salary2">
+        </div>
+        <div class="calculate">
+            <button class="button">Calculate</button>
+        </div>
+        </div>
+</body>

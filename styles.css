@@ -1,0 +1,186 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    grid-area: header;
+}
+
+.title {
+    grid-area: title;
+    font-family: "Didact+Gothic", sans-serif;
+}
+
+.logo {
+    padding-left: 6rem;
+    font-family: "Lobster", sans-serif;
+    cursor: pointer;
+}
+
+a {
+    all: unset;
+}
+
+.logo:hover {
+    color: #9BD770;
+}
+
+.aboutbtn {
+    all: unset;
+    font-family: "Heebo", sans-serif;
+    padding-top: .5rem;
+    padding-right: .5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-bottom: 3px;
+}
+
+.aboutbtn:hover {
+    color: #9BD770;
+}
+
+.aboutbtn:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #375F1B;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.aboutbtn:hover:after {
+    transform: scaleX(1);
+}
+
+.job1 {
+    grid-area: job1;
+}
+
+.city1 {
+    grid-area: city1;
+}
+
+.salary1 {
+    grid-area: salary1;
+}
+
+.job2 {
+    grid-area: job2;
+}
+
+.city2 {
+    grid-area: city2;
+}
+
+.salary2 {
+    grid-area: salary2;
+}
+
+.calculate {
+    grid-area: calculate;
+}
+
+.button {
+    font-family: sans-serif;
+    padding: 1.25rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #66b032;
+    box-shadow: 0 0 .25rem 0 rgba(0, 0, 0, .5);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: .6em;
+    border-radius: 30px;
+}
+
+.button:hover{
+    filter: brightness(95%);
+}
+
+.result {
+    grid-area: result;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'title title title title' 
+        'job1 job1 job2 job2'
+        'city1 salary1 city2 salary2'
+        'calculate calculate calculate calculate';
+    background-color: white;
+    color: #1B3409;
+}
+
+.grid-container > div {
+    background-color: #EBF7E3;
+    text-align: center;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+.grid-container > .header {
+    position: relative;
+    z-index: 2;
+    background-color: #66B032;
+    color: white;
+    text-shadow: -1px -1px 0 #1B3409, 1px -1px 0 #1B3409, -1px 1px 0 #1B3409, 1px 1px 0 #1B3409;
+    font-size: 2rem;
+    gap: 0;
+    padding: 1.5rem;
+    box-shadow: 0 0 .25rem 0 rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-container > .title {
+    background-color: white;
+    font-size: 4rem;
+    padding-bottom: 0px;
+}
+
+.job1, .city1, .salary1, .job2, .city2, .salary2 {
+    font-family: "Montserrat", sans-serif;
+    margin: 2rem;
+    width: 12rem;
+    border: 1px solid #000;
+    box-shadow: 0 0 .25rem 0 rgba(0, 0, 0, .5);
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.grid-container > .calculate {
+    background-color: white;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-shadow: -1px -1px 0 #1B3409, 1px -1px 0 #1B3409, -1px 1px 0 #1B3409, 1px 1px 0 #1B3409;
+}
+
+.grid-container > .result {
+    box-shadow: 0 0 .25rem 0 rgba(0, 0, 0, .5);
+}
+
+.grid-container > .job1, .grid-container > .job2 {
+    font-family: "Esteban", sans-serif;
+    text-shadow: -1px -1px 0 #1B3409, 1px -1px 0 #1B3409, -1px 1px 0 #1B3409, 1px 1px 0 #1B3409;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 14rem;
+    color: white;
+    font-size: 3.5rem;
+    background-color: #66B032;
+    border: 0px;
+    box-shadow: none;
+    padding-right: 14.8rem;
+    padding-top: 2rem;
+    border: 1px solid #000;
+    margin-top: 2.5rem;
+    font-weight: lighter;
+}
+
+.grid-container > .city1, .grid-container > .salary1, .grid-container > .city2, .grid-container > .salary2 {
+    font-family: "Heebo", sans-serif;
+    margin-top: 0px;
+}
