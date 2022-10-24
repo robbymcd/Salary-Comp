@@ -5,3 +5,5 @@ This allows individuals to receive an accurates representation of which job actu
 
 *All data used is from AdvisorSmith Cost of Living Index.*
 *https://advisorsmith.com/data/coli*
+
+View site at: https://robbymcd.github.io/Salary-Comp/
