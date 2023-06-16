@@ -1,0 +1,25 @@
+[debug] [2023-06-16T21:45:03.561Z] ----------------------------------------------------------------------
+[debug] [2023-06-16T21:45:03.565Z] Command:       /opt/homebrew/Cellar/node/19.8.1/bin/node /opt/homebrew/bin/firebase init
+[debug] [2023-06-16T21:45:03.565Z] CLI Version:   12.2.1
+[debug] [2023-06-16T21:45:03.565Z] Platform:      darwin
+[debug] [2023-06-16T21:45:03.565Z] Node Version:  v19.8.1
+[debug] [2023-06-16T21:45:03.565Z] Time:          Fri Jun 16 2023 17:45:03 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-06-16T21:45:03.565Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-16T21:45:03.597Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-16T21:45:03.597Z] > authorizing via signed-in user (robbyhmcdonald@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/robbymcd/Desktop/Salary COmp/salary-comp/Salary-Comp
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
