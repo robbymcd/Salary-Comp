@@ -1,7 +1,6 @@
 {
-  "short_name": "Salary Comp",
-  "name": "Salary Comp",
-  "description": "Compare Job Offers by COL",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

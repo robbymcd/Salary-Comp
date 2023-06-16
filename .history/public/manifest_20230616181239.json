@@ -1,7 +1,6 @@
 {
   "short_name": "Salary Comp",
-  "name": "Salary Comp",
-  "description": "Compare Job Offers by COL",
+  "name": "Salary COmp",
   "icons": [
     {
       "src": "favicon.ico",
