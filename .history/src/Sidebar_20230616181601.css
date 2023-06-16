@@ -67,7 +67,7 @@
 
 .clear {
     height: 30px;
-    width: clamp(200px, 20vw, 300px);
+    width: clamp(100px, 20vw, 300px);
     border-radius: 10px;
     border: none;
     outline: none;
