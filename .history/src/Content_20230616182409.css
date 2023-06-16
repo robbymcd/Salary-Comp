@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Kadwa');
+@import url('https://fonts.googleapis.com/css?family=Hind-Madurai');
+
+.Content-container {
+    display: flex;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    gap: 25px;
+}
+
+.content h1 {
+    font-family: Kadwa;
+    font-weight: bold;
+    font-size: 45px;
+    height: 100%;
+    margin: 0;
+}
+
+.content h2 {
+    font-family: Hind Madurai;
+    font-size: 40px;
+    color: #a8a8a8;
+    margin-top: 50px;
+    width: 75%;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.content p {
+    display: flex;
+    width: 50vw;
+    font-family: Hind Madurai;
+    font-size: 20px;
+    color: #a8a8a8;
+    word-spacing: 2px;
+    line-height: 1.5;
+    margin-top: 50px;
+    width: 70%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: fit-content;
+    width: 100%;
+    justify-items: center;
+}
+
+.calculator {
+    display: flex;
+    height: 150px;
+    width: 150px;
+}
+
+@media screen and (max-width: 700px) {
+    .Content-container {
+        width: 100vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .calculator {
+        display: none;
+    }
+
+    .content h2 {
+        font-size: 25px;
+        width: 100vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        width: 100vw;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}

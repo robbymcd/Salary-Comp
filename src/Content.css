@@ -61,7 +61,32 @@
 
 @media screen and (max-width: 700px) {
     .Content-container {
-        width: 100%;
+        width: 100vw;
         justify-content: center;
+        text-align: center;
+    }
+
+    .calculator {
+        display: none;
+    }
+    .content h1 {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .content h2 {
+        font-size: 25px;
+        width: 100vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        font-size: 15px;
+        width: 100vw;
+        margin-top: 20px;
+        margin-bottom: 100px;
     }
 }
