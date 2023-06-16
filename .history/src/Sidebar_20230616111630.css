@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto-Mono');
+@import url('https://fonts.googleapis.com/css?family=Mukta-Vaani');
+.sidebar {
+    display: flex;
+    height: 100vh;
+    width: fit-content;
+}
+
+.closed-sidebar {
+    display: flex;
+    height: 100vh;
+    width: fit-content;
+    margin-right: 22vw;
+}
+
+.plusIcon {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.plusIcon:hover {
+    opacity: 0.5;
+}
+
+.error {
+    display: flex;
+    font-size: 15px;
+    margin-bottom: -15px;
+    color: #BA1F33;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submit-container {
+    display: flex;
+}
+
+.submit {
+    height: 30px;
+    width: clamp(100px, 20vw, 300px);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #52796F;
+    font-family: Mukta Vaani;
+    font-size: 15px;
+    color: #000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.submit:hover {
+    opacity: 0.8;
+}
+
+.clear-container {
+    display: flex;
+}
+
+.clear {
+    height: 30px;
+    width: clamp(100px, 20vw, 300px);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #a8a8a8;
+    font-family: Mukta Vaani;
+    font-size: 15px;
+    color: #000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.clear:hover {
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 1650px) {
+    .submit {
+        height: 40px;
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .clear {
+        height: 40px;
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .button-container {
+        gap: 20px;
+    }
+}
