@@ -113,7 +113,7 @@ select {
 input {
     text-decoration: none;
     height: 30px;
-    width: clamp(100px, 20vw, 300px);
+    width: clamp(200px, 20vw, 300px);
     border-radius: 10px;
     outline: none;
     border: none;
@@ -213,5 +213,24 @@ input {
 
     input {
         margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .open-sidebar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sidebar-header {
+        width: 100%;
+    }
+
+    .city {
+        width: 200px;
+    }
+
+    select {
+        width: 200px;
     }
 }

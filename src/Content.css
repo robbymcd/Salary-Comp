@@ -58,3 +58,10 @@
     height: 150px;
     width: 150px;
 }
+
+@media screen and (max-width: 700px) {
+    .Content-container {
+        width: 100%;
+        justify-content: center;
+    }
+}
