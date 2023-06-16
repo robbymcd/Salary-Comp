@@ -218,12 +218,12 @@ input {
 
 @media screen and (max-width: 700px) {
     .open-sidebar {
-        width: 100%;
+        width: 100vw;
         margin: 0;
     }
 
     .sidebar-header {
-        width: 100%;
+        width: 100vw;
     }
 
     .city {
