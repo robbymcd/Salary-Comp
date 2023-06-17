@@ -7,8 +7,8 @@ import 'chartjs-adapter-date-fns';
 import './Main.css';
 
 export default function Main({cityCOL1, cityCOL2, cityName1, cityName2, salary1, salary2}) {
-    const calcAdjustedSal = (salary, col1, col2,) => {
-        return salary * (col2/col1);
+    const calcAdjustedSal = (salary, col) => {
+        return salary * (col/100);
     }
 
     const formatSalary = (salary) => {
@@ -34,8 +34,8 @@ export default function Main({cityCOL1, cityCOL2, cityName1, cityName2, salary1,
         return salary1 > salary2 ? "1" : "2";
     }
 
-    const adjSalary1 = calcAdjustedSal(formatSalary(salary1), cityCOL1, cityCOL2);
-    const adjSalary2 = calcAdjustedSal(formatSalary(salary2), cityCOL2, cityCOL1);
+    const adjSalary1 = calcAdjustedSal(formatSalary(salary1), cityCOL1);
+    const adjSalary2 = calcAdjustedSal(formatSalary(salary2), cityCOL2);
 
     const data = {
         labels: ['Salary 1', 'Salary 2', 'Adjusted Salary 1', 'Adjusted Salary 2'],

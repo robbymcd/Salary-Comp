@@ -8,7 +8,7 @@ import './Main.css';
 
 export default function Main({cityCOL1, cityCOL2, cityName1, cityName2, salary1, salary2}) {
     const calcAdjustedSal = (salary, col1, col2,) => {
-        return salary * (col2/col1);
+        return salary * (col1/col2);
     }
 
     const formatSalary = (salary) => {
