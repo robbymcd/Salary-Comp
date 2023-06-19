@@ -138,7 +138,7 @@ export default function Sidebar( { onFormSubmit } ) {
                         <label>City</label>
                         <div className="select-main">
                             <select ref={selectRef1} value={city1} className='select-input' onChange={city1ChangeHandler}>
-                                <option value='0'>Select a City</option>
+                            <option value='0'>Select a City</option>
                                 <option value='89.1'>Abilene, TX</option>
                                 <option value='90.5'>Adrian, MI</option>
                                 <option value='89.4'>Akron, OH</option>
