@@ -14,6 +14,9 @@ export default function Sidebar( { onFormSubmit } ) {
     const [city1, setCity1] = useState('0');
     const [city2, setCity2] = useState('0');
 
+    const [city1Label, setCity1Label] = useState('Select a City');
+    const [city2Label, setCity2Label] = useState('Select a City');
+
     const [salary1, setSalary1] = useState('');
     const [salary2, setSalary2] = useState('');
 
@@ -45,10 +48,12 @@ export default function Sidebar( { onFormSubmit } ) {
 
     const city1ChangeHandler = (event) => {
         setCity1(event.target.value)
+        setCity1Label(event.target.label)
     }
 
     const city2ChangeHandler = (event) => {
         setCity2(event.target.value);
+        setCity2Label(event.target.label);
     }
 
 
@@ -137,7 +142,7 @@ export default function Sidebar( { onFormSubmit } ) {
                     <div className='city'>
                         <label>City</label>
                         <div className="select-main">
-                            <select ref={selectRef1} value={city1} className='select-input' onChange={city1ChangeHandler}>
+                            <select ref={selectRef1} value={city1Label} className='select-input' onChange={city1ChangeHandler}>
                                 <option value='0'>Select a City</option>
                                 <option value='89.1'>Abilene, TX</option>
                                 <option value='90.5'>Adrian, MI</option>
@@ -145,45 +150,45 @@ export default function Sidebar( { onFormSubmit } ) {
                                 <option value='85.8'>Alamogordo, NM</option>
                                 <option value='87.3'>Albany, GA</option>
                                 <option value='105.4'>Albany, OR</option>
-                                <option value='100.1'>Albany, NY</option>
-                                <option value='90.9'>Albertville, AL</option>
-                                <option value='92.9'>Albuquerque, NM</option>
-                                <option value='86.2'>Alexandria, LA</option>
-                                <option value='98.9'>Allentown, PA</option>
-                                <option value='90.8'>Altoona, PA</option>
-                                <option value='88.2'>Amarillo, TX</option>
-                                <option value='91.5'>Ames, IA</option>
-                                <option value='110.7'>Anchorage, AK</option>
-                                <option value='99.3'>Ann Arbor, MI</option>
-                                <option value='85.7'>Anniston, AL</option>
-                                <option value='90.7'>Appleton, WI</option>
-                                <option value='103.3'>Asheville, NC</option>
-                                <option value='87.4'>Ashtabula, OH</option>
-                                <option value='88.5'>Athens, OH</option>
-                                <option value='92.9'>Athens, TX</option>
-                                <option value='95'>Athens, GA</option>
-                                <option value='100.3'>Atlanta, GA</option>
-                                <option value='102'>Atlantic City, NJ</option>
-                                <option value='93.7'>Auburn, NY</option>
-                                <option value='91.9'>Auburn, AL</option>
-                                <option value='91.6'>Augusta, GA</option>
-                                <option value='100'>Augusta, ME</option>
-                                <option value='106.6'>Austin, TX</option>
-                                <option value='102.9'>Bakersfield, CA</option>
-                                <option value='107'>Baltimore, MD</option>
-                                <option value='98'>Bangor, ME</option>
-                                <option value='122.4'>Barnstable Town, MA</option>
-                                <option value='91.1'>Baton Rouge, LA</option>
-                                <option value='85.9'>Battle Creek, MI</option>
-                                <option value='85.4'>Bay City, MI</option>
-                                <option value='88.6'>Beaumount, TX</option>
-                                <option value='92.9'>Beaver Dam, WI</option>
-                                <option value='80'>Beckley, WV</option>
-                                <option value='111.6'>Bellingham, WA</option>
-                                <option value='115.9'>Bend, OR</option>
-                                <option value='95.7'>Billings, MT</option>
-                                <option value='93.3'>Binghamton, NY</option>
-                                <option value='90.7'>Birmingham, AL</option>
+                                <option value='100.1' >Albany, NY</option>
+                                <option value='90.9' >Albertville, AL</option>
+                                <option value='92.9' >Albuquerque, NM</option>
+                                <option value='86.2' >Alexandria, LA</option>
+                                <option value='98.9' >Allentown, PA</option>
+                                <option value='90.8' >Altoona, PA</option>
+                                <option value='88.2' >Amarillo, TX</option>
+                                <option value='91.5' >Ames, IA</option>
+                                <option value='110.7' >Anchorage, AK</option>
+                                <option value='99.3' >Ann Arbor, MI</option>
+                                <option value='85.7' >Anniston, AL</option>
+                                <option value='90.7' >Appleton, WI</option>
+                                <option value='103.3' >Asheville, NC</option>
+                                <option value='87.4' >Ashtabula, OH</option>
+                                <option value='88.5' >Athens, OH</option>
+                                <option value='92.9' >Athens, TX</option>
+                                <option value='95' >Athens, GA</option>
+                                <option value='100.3' >Atlanta, GA</option>
+                                <option value='102' >Atlantic City, NJ</option>
+                                <option value='93.7' >Auburn, NY</option>
+                                <option value='91.9' >Auburn, AL</option>
+                                <option value='91.6' >Augusta, GA</option>
+                                <option value='100' >Augusta, ME</option>
+                                <option value='106.6' >Austin, TX</option>
+                                <option value='102.9' >Bakersfield, CA</option>
+                                <option value='107' >Baltimore, MD</option>
+                                <option value='98' >Bangor, ME</option>
+                                <option value='122.4' >Barnstable Town, MA</option>
+                                <option value='91.1' >Baton Rouge, LA</option>
+                                <option value='85.9' >Battle Creek, MI</option>
+                                <option value='85.4' >Bay City, MI</option>
+                                <option value='88.6' >Beaumount, TX</option>
+                                <option value='92.9' >Beaver Dam, WI</option>
+                                <option value='80' >Beckley, WV</option>
+                                <option value='111.6' >Bellingham, WA</option>
+                                <option value='115.9' >Bend, OR</option>
+                                <option value='95.7' >Billings, MT</option>
+                                <option value='93.3' >Binghamton, NY</option>
+                                <option value='90.7' >Birmingham, AL</option>
                                 <option value='93.1'>Bismarck, ND</option>
                                 <option value='94.5'>Blacksburg, VA</option>
                                 <option value='92.4'>Bloomington, IN</option>
@@ -196,46 +201,46 @@ export default function Sidebar( { onFormSubmit } ) {
                                 <option value='125.3'>Bozeman, MT</option>
                                 <option value='97.9'>Brainerd, MN</option>
                                 <option value='89.5'>Branson, MO</option>
-                                <option value='115'>Bremerton, WA</option>
-                                <option value='87.8'>Brownsville, TX</option>
-                                <option value='94.4'>Brunswick, GA</option>
-                                <option value='97.3'>Buffalo, NY</option>
-                                <option value='91.8'>Burlington, NC</option>
-                                <option value='112.8'>Burlington, VT</option>
-                                <option value='88.2'>Canton, OH</option>
-                                <option value='88.1'>Cape Girardeau, MO</option>
-                                <option value='83.5'>Carbondale, IL</option>
-                                <option value='103'>Carson City, NV</option>
-                                <option value='94.2'>Casper, WY</option>
-                                <option value='88.1'>Cedar Rapids, IA</option>
-                                <option value='103.3'>Centralia, WA</option>
-                                <option value='95.7'>Chambersburg, PA</option>
-                                <option value='89'>Champaign, IL</option>
-                                <option value='83.9'>Charleston, WV</option>
-                                <option value='101.7'>Charleston, SC</option>
-                                <option value='97.9'>Charlotte, NC</option>
-                                <option value='102.1'>Charlottesville, VA</option>
-                                <option value='91.2'>Chattanooga, TN</option>
-                                <option value='96.9'>Cheyenne, WY</option>
-                                <option value='100.1'>Chicago, IL</option>
-                                <option value='110.5'>Chico, CA</option>
-                                <option value='89.8'>Chillicothe, OH</option>
-                                <option value='92.4'>Cincinnati, OH</option>
-                                <option value='102.3'>Claremont, NH</option>
-                                <option value='83.4'>Clarksburg, WV</option>
-                                <option value='88.7'>Clarksville, TN</option>
-                                <option value='108.8'>Clearlake, CA</option>
-                                <option value='89.5'>Cleveland, TN</option>
-                                <option value='90'>Cleveland, OH</option>
-                                <option value='103.3'>Coeur d'Alene, ID</option>
-                                <option value='92.3'>College Station, TX</option>
-                                <option value='102.2'>Colorado Springs, CO</option>
-                                <option value='89.8'>Columbia, MO</option>
-                                <option value='91.9'>Columbia, SC</option>
-                                <option value='88.5'>Columbus, GA</option>
-                                <option value='89.1'>Columbus, IN</option>
-                                <option value='93.9'>Columbus, OH</option>
-                                <option value='108.3'>Concord, NH</option>
+                                <option value='115' >Bremerton, WA</option>
+                                <option value='87.8' >Brownsville, TX</option>
+                                <option value='94.4' >Brunswick, GA</option>
+                                <option value='97.3' >Buffalo, NY</option>
+                                <option value='91.8' >Burlington, NC</option>
+                                <option value='112.8' >Burlington, VT</option>
+                                <option value='88.2' >Canton, OH</option>
+                                <option value='88.1' >Cape Girardeau, MO</option>
+                                <option value='83.5' >Carbondale, IL</option>
+                                <option value='103' >Carson City, NV</option>
+                                <option value='94.2' >Casper, WY</option>
+                                <option value='88.1' >Cedar Rapids, IA</option>
+                                <option value='103.3' >Centralia, WA</option>
+                                <option value='95.7' >Chambersburg, PA</option>
+                                <option value='89' >Champaign, IL</option>
+                                <option value='83.9' >Charleston, WV</option>
+                                <option value='101.7' >Charleston, SC</option>
+                                <option value='97.9' >Charlotte, NC</option>
+                                <option value='102.1' >Charlottesville, VA</option>
+                                <option value='91.2' >Chattanooga, TN</option>
+                                <option value='96.9' >Cheyenne, WY</option>
+                                <option value='100.1' >Chicago, IL</option>
+                                <option value='110.5' >Chico, CA</option>
+                                <option value='89.8' >Chillicothe, OH</option>
+                                <option value='92.4' >Cincinnati, OH</option>
+                                <option value='102.3' >Claremont, NH</option>
+                                <option value='83.4' >Clarksburg, WV</option>
+                                <option value='88.7' >Clarksville, TN</option>
+                                <option value='108.8' >Clearlake, CA</option>
+                                <option value='89.5' >Cleveland, TN</option>
+                                <option value='90' >Cleveland, OH</option>
+                                <option value='103.3' >Coeur d'Alene, ID</option>
+                                <option value='92.3' >College Station, TX</option>
+                                <option value='102.2' >Colorado Springs, CO</option>
+                                <option value='89.8' >Columbia, MO</option>
+                                <option value='91.9' >Columbia, SC</option>
+                                <option value='88.5' >Columbus, GA</option>
+                                <option value='89.1' >Columbus, IN</option>
+                                <option value='93.9' >Columbus, OH</option>
+                                <option value='108.3' >Concord, NH</option>
                                 <option value='90.9'>Cookeville, TN</option>
                                 <option value='102'>Coos Bay, OR</option>
                                 <option value='90.9'>Corning, NY</option>
@@ -643,8 +648,8 @@ export default function Sidebar( { onFormSubmit } ) {
                                 <option value='84.1'>Wheeling, WV</option>
                                 <option value='105.9'>New London, CT</option>
                                 <option value='96.6'>Daphne, AL</option>
-                                <option value='89.5'>Victoria, TX</option>
-                                <option value='97.6'>Aberdeen, WA</option>
+                                <option value='89.5' label='Victoria, TX'>Victoria, TX</option>
+                                <option value='97.6' >Aberdeen, WA</option>
                            </select>
                         </div>
                     </div>
@@ -656,7 +661,7 @@ export default function Sidebar( { onFormSubmit } ) {
                     <div className='city'>
                         <label>City</label>
                         <div className="select-main">
-                            <select ref={selectRef2} value={city2} className='select-input' onChange={city2ChangeHandler}>
+                            <select ref={selectRef2} value={city2Label} className='select-input' onChange={city2ChangeHandler}>
                                 <option value='0'>Select a City</option>
                                 <option value='89.1'>Abilene, TX</option>
                                 <option value='90.5'>Adrian, MI</option>
